@@ -1,0 +1,32 @@
+.header {
+    background-color: #fff;
+    /* 背景は白 */
+    border-bottom: 1px solid #eee;
+    /* 下部に薄い境界線を入れると締まります */
+    padding: 20px 0;
+    /* 上下に適度な余白 */
+}
+
+.header__inner {
+    max-width: 1200px;
+    /* コンテンツの最大幅 */
+    margin: 0 auto;
+    /* 中央寄せ */
+    text-align: center;
+    /* ロゴを中央に */
+}
+
+/* ロゴ（FashionablyLate）のスタイル */
+.header__logo {
+    color: #8b7969;
+    /* 画像に近い、少し茶色がかったグレー */
+    font-family: 'Playfair Display', serif;
+    /* もしセリフ体を使うなら */
+    font-size: 32px;
+    /* ロゴの大きさ */
+    font-weight: normal;
+    /* 太すぎない方が上品です */
+    letter-spacing: 0.1em;
+    /* 文字間隔を少し広げて高級感を出す */
+    margin: 0;
+}
