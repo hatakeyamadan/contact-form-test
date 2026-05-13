@@ -1,8 +1,14 @@
 @extends('layouts.app')
 
-@section('content')
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/index.css') }}" />
+@endsection
 
+@section('content')
+    <div class="contact-form__content">
+      <div class="contact-form__heading">
         <h2>Contact</h2>
+      </div>
         <form action="/contact/confirm" method="post">
             @csrf
             <table class="form-table">
@@ -68,4 +74,5 @@
                 <button type="submit">確認画面</button>
             </div>
         </form>
+    </div>
 @endsection
