@@ -9,7 +9,10 @@
 - composer install
 - cp .env.example .env 環境変数を適宜変更
 ## 使用技術
-
+- php 8.1
+- Laravel 3.8
+- mysql 8.0.26
+- nginx 1.21.1
 ## ER図
 
 ## 開発環境
