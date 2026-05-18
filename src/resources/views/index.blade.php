@@ -10,7 +10,7 @@
         <h2>Contact</h2>
     </div>
 
-    <form class="form" action="/contact/confirm" method="post">
+    <form class="form" action="/contacts/confirm" method="post">
         @csrf
 
         {{-- お名前 --}}
