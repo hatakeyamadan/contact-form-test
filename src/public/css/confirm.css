@@ -1,0 +1,28 @@
+.confirm__heading {
+    color: #8b7969;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.cofirm__content {
+    margin: 0 auto;
+    padding: 15px 15px;
+    max-width: 1200px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.confirm-table {
+    border: 1px solid #ddd;
+}
+
+.confirm-table__inner {
+    width: 100%;
+}

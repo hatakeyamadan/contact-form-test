@@ -10,7 +10,7 @@
         <h2>Contact</h2>
     </div>
 
-    <form class="form" action="/contacts/confirm" method="post">
+    <form class="form" action="/confirm" method="post">
         @csrf
 
         {{-- お名前 --}}
@@ -98,7 +98,7 @@
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__input--text">
-                <select name="category_id">
+                <select name="content">
                     <option value="">選択してください</option>
                     <option value="1">商品のお届けについて</option>
                     <option value="2">商品の交換について</option>
