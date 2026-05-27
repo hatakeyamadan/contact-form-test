@@ -15,7 +15,7 @@
         <div class="header__inner">
             <h1 class="header__logo">FashionablyLate</h1>
             <div class="header__button">
-                <button class="button-login" type="button">login</button>
+                <a class="login__button-submit" href="/login">login</a>
             </div>
         </div>
     </header>
@@ -26,7 +26,8 @@
                 <h2>Register</h2>
             </div>
 
-            <form class="form" action="">
+            <form class="form" action="/register" method="post">
+                @csrf
                 <div class="form__group">
                     <div class="form__group-title">
                         <p>お名前</p>
