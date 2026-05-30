@@ -25,7 +25,14 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">性別</th>
               <td class="confirm-table__text">
-                <input type="text" name="gender" value="{{ $contact['gender'] }}" readonly />
+                @if($contact['gender'] == 1)
+                  男性
+                @elseif($contact['gender'] == 2)
+                  女性
+                @else
+                  その他
+                @endif
+                <input type="hidden" name="gender" value="{{ $contact['gender'] }}" />
               </td>
             </tr>
             <tr class="confirm-table__row">
@@ -76,7 +83,7 @@
             <button class="form__button-submit" type="submit">送信</button>
           </div>
           <div class="form__button">
-            <button class="form__button-back" type="button" onclick="window.history.back();">修正する</button>
+            <button class="form__button-back" type="submit"name="action" value="back">修正する</button>
           </div>
         </div>
     </form>

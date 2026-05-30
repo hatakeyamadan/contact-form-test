@@ -17,7 +17,7 @@ class ContactController extends Controller
     public function confirm(ContactRequest $request)
     {
         $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tel1', 'tel2', 'tel3', 'address', 'building', 'category_id', 'detail']);
-        $contact['name'] = $contact['last_name'] . '　' . $contact['first_name'];
+        $contact['name'] = $contact['first_name'] . '　' . $contact['last_name'];
         $contact['tel'] = $contact['tel1']  . $contact['tel2'] . $contact['tel3'];
         $categories = Category::all();
         return view('confirm', compact('contact', 'categories'));
@@ -27,6 +27,9 @@ class ContactController extends Controller
     {
         $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tel', 'address', 'building', 'category_id', 'detail']);
         Contact::create($contact);
+        if ($request->input('action') === 'back') {
+        return redirect('/')->withInput($request->input());
+        }
         return view('thanks');
     }
 

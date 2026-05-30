@@ -27,6 +27,15 @@
     margin: 0;
 }
 
+.login__button {
+    text-decoration: none;
+    color: #e1d1c2;
+    background-color: rgb(234, 234, 234);
+    padding: 3px 20px;
+    font-size: 15px;
+    border: 1px solid #c6c5c5;
+}
+
 .register__content {
     margin: 0 auto;
     padding: 15px;
