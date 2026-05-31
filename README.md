@@ -9,7 +9,7 @@
 ### Laravel環境構築
 - docker-compose exec php bash
 - composer install
-- エラーが出る場合は下記コードを実行してください
+- エラーが出る場合は下記コードを実行してください  
   composer update laravel-lang/lang
 - cp .env.example .env 環境変数を適宜変更
 - php artisan key:generate
