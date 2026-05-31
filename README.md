@@ -19,6 +19,6 @@
 ## ER図
 ![](img/.drowio.svg)
 ## 開発環境
-- お問い合わせ画面 : https://lochalhost/
-- ユーザー登録 : https://lochalhost/register
-- phpMyAdmin : https://lochalhost:8080
+- お問い合わせ画面 : http://lochalhost/
+- ユーザー登録 : http://lochalhost/register
+- phpMyAdmin : http://lochalhost:8080
