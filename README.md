@@ -8,11 +8,17 @@
 - docker-compose exec php bash
 - composer install
 - cp .env.example .env 環境変数を適宜変更
+- php artisan key:generato
+- php artisan migrate
+- php artisan db:seed
 ## 使用技術
 - php 8.1
-- Laravel 3.8
+- Laravel 8.83.8
 - mysql 8.0.26
 - nginx 1.21.1
 ## ER図
-
+![](img/.drowio.svg)
 ## 開発環境
+- お問い合わせ画面 : https://lochalhost/
+- ユーザー登録 : https://lochalhost/register
+- phpMyAdmin : https://lochalhost:8080
