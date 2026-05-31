@@ -5,10 +5,12 @@
 - git clone git@github.com:hatakeyamadan/contact-form-test.git
 - cd contact-form-test
 - docker-compose up -d --build
+- code .
 ### Laravel環境構築
 - docker-compose exec php bash
 - composer install
-- composer update laravel-lang/lang
+- エラーが出る場合は下記コードを実行してください
+  composer update laravel-lang/lang
 - cp .env.example .env 環境変数を適宜変更
 - php artisan key:generate
 - php artisan migrate
