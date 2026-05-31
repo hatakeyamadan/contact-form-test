@@ -3,12 +3,14 @@
 ## 環境構築
 ### Dockerビルド
 - git clone git@github.com:hatakeyamadan/contact-form-test.git
+- cd contact-form-test
 - docker-compose up -d --build
 ### Laravel環境構築
 - docker-compose exec php bash
 - composer install
+- composer update laravel-lang/lang
 - cp .env.example .env 環境変数を適宜変更
-- php artisan key:generato
+- php artisan key:generate
 - php artisan migrate
 - php artisan db:seed
 ## 使用技術
