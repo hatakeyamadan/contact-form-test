@@ -10,7 +10,7 @@
         <h2>Contact</h2>
     </div>
 
-    <form class="form" action="/confirm" method="post">
+    <form class="form" action="/confirm" method="POST">
         @csrf
 
         {{-- お名前 --}}
@@ -94,6 +94,11 @@
                         <span>-</span>
                         <input type="text" name="tel3" placeholder="5678" value="{{ old('tel3') }}">
                     </div>
+                    @if($errors->has('tel1') || $errors->has('tel2') || $errors->has('tel3'))
+                        <div class="form__error">
+                            {{ $errors->first('tel1') ?: ($errors->first('tel2') ?: $errors->first('tel3')) }}
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

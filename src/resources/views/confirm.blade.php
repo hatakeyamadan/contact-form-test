@@ -10,7 +10,7 @@
         <h2>Confirm</h2>
     </div>
 
-    <form class="form" action="/thanks" method="post">
+    <form class="form" action="/thanks" method="POST">
       @csrf
         <div class="confirm-table">
           <table class="confirm-table__inner">
@@ -82,10 +82,10 @@
           <div class="form__button">
             <button class="form__button-submit" type="submit">送信</button>
           </div>
-          <div class="form__button">
-            <button class="form__button-back" type="submit"name="action" value="back">修正する</button>
-          </div>
         </div>
     </form>
+    <div class="form__back">
+      <a href="/" class="button-back">修正</a>
+    </div>
 </div>
 @endsection

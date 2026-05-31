@@ -27,9 +27,6 @@ class ContactController extends Controller
     {
         $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tel', 'address', 'building', 'category_id', 'detail']);
         Contact::create($contact);
-        if ($request->input('action') === 'back') {
-        return redirect('/')->withInput($request->input());
-        }
         return view('thanks');
     }
 
