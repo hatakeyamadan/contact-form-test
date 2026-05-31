@@ -19,7 +19,6 @@
 ## ER図
 ![](img/.drowio.svg)
 ## 開発環境
-Dockerコンテナを起動後、以下をコピーしてブラウザのURL欄に貼り付けてアクセスしてください。
-- お問い合わせ画面 : lochalhost/
-- ユーザー登録 : http://lochalhost/register
-- phpMyAdmin : http://lochalhost:8080
+- お問い合わせ画面 : http://lochalhost/
+- ユーザー登録 : http://localhost/register
+- phpMyAdmin : http://localhost:8080
